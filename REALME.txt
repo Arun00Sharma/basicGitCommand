@@ -28,4 +28,23 @@ git rm --cached <files> -> moves file back
  git log-> list down all the commit of the repository . if you want to exit
  out of git log prompt press q.
 
- git restore REALME.txt
+ git restore REALME.txt -> it removes all file changes from the staging area to be 
+ commited . this can be useful . if we did  some dirty peace of code not more wanted 
+ instead of deleting every change line by line . we can 
+ restore it or you can say restore last  clean version of the file .
+
+ git restore --stage <files> -> it remove file from chenges to staging area to  working 
+ area . this only works changes in the staging  
+
+ git status : 
+
+ difference between git rm and git restore :
+ Ans: if you  want to move the whole file back to  the untracked state , then we 
+ do git rm , otherwise if we just want to changes to be moved in working area or staging area  then 
+ we git restored
+
+ note : let take a example you commited two , every commited have ref.number ,now you want to 
+ know what difference between these commit , use  git command :
+  
+  git diff  <refno.of firstcommit> <give ref no. of second commit>
+  
