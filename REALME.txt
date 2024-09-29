@@ -47,4 +47,34 @@ git rm --cached <files> -> moves file back
  know what difference between these commit , use  git command :
   
   git diff  <refno.of firstcommit> <give ref no. of second commit>
-  
+
+  -------------------------------
+  open your git bash
+Step 1 : you can check the version of git which you are using :
+   git --version
+
+Step 2 : you can check configure your git , you can check email, or username 
+you need configuation is important , check the configure :
+ 
+       git config --list 
+note : git is nothing but bunch of commmand .
+--------------
+
+cd developer 
+------------
+make a new folder 
+ mkdir Git_demo_App_Mar
+
+Ques : how to remove git folder after initializing 
+ Ans :  rm -rf .git 
+
+Ques: how to configure your git account details globally 
+ANs : git config --global user.email "princevarun1989@gmail.com"
+
+Ques: how to push your file ?
+Ans : git push <remote-name> <branch-name>
+note: when you initialize the git repository , after that you do add the 
+central reposiory 
+  git remote add <remotename> remote <remote url>
+
+https://github.com/Arun00Sharma/basicGitCommand
